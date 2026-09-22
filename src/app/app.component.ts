@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { AccorionGroupComponent } from './shared/components/accorion-group/accorion-group.component';
+import { AccorgingPanelComponent } from './shared/components/accorging-panel/accorging-panel.component';
+import { AccordingBodyDirective } from './shared/according-body.directive';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [AccorionGroupComponent,AccorgingPanelComponent,AccordingBodyDirective],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

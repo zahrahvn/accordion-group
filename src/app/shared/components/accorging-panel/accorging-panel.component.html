@@ -1,0 +1,6 @@
+<div (click)="toggle()">
+  {{ title }}
+</div>
+@if (isOpen()) {
+  <ng-container *ngTemplateOutlet="body.template"> </ng-container>
+}
